@@ -813,14 +813,14 @@ Prompt that allows the user to play multiple-choice quiz questions.
 ```js
 const { Quiz } = require('enquirer');
 
- const prompt = new Quiz({
+const prompt = new Quiz({
   name: 'countries',
   message: 'How many countries are there in the world?',
   choices: ['165', '175', '185', '195', '205'],
   correctChoice: 3
 });
 
- prompt
+prompt
   .run()
   .then(answer => {
     if (answer.correct) {
