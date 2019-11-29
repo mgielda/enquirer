@@ -500,7 +500,7 @@ Prompt that asks for username and password to authenticate the user. The default
 ```js
 const { BasicAuth } = require('enquirer');
 
- const prompt = new BasicAuth({
+const prompt = new BasicAuth({
   name: 'password',
   message: 'Please enter your password',
   username: 'rajat-sr',
@@ -508,7 +508,7 @@ const { BasicAuth } = require('enquirer');
   showPassword: true
 });
 
- prompt
+prompt
   .run()
   .then(answer => console.log('Answer:', answer))
   .catch(console.error);
